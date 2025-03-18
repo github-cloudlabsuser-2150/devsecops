@@ -138,6 +138,7 @@ jobs:
         with:
           scope: subscription
           region: ${{ vars.DEPLOYMENTREGION }}
+          deploymentName: "createResourceGroup-${env.SUFFIX}"
           template: ./iac/createResourceGroup.bicep
           parameters: rgName=${{ env.RESOURCE_GROUP_NAME }} suffix=${{ vars.SUFFIX }} rgLocation=${{ vars.DEPLOYMENTREGION }}
       # Next step is to deploy the Azure resources to the resource group `contoso-traders-rg` created above. The deployed resources
