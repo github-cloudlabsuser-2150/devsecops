@@ -1180,7 +1180,7 @@ resource loadtestsvc 'Microsoft.LoadTestService/loadTests@2022-12-01' = {
 // aks cluster
 //
 
-resource aks 'Microsoft.ContainerService/managedClusters@2024-10-01' = {
+resource aks 'Microsoft.ContainerService/managedClusters@2024-10-02-preview' = {
   name: aksClusterName
   location: resourceLocation
   tags: resourceTags
